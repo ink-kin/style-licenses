@@ -1,0 +1,68 @@
+# Node.generated files
+node_modules/
+.vuepress/dist/
+.vuepress/bundles/
+.vuepress/public/
+.vuepress/cache/
+
+# Log files
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor files
+.idea/
+*.iml
+*.swp
+*.swo
+*.swn
+*.tmp
+*.bak
+*.DS_Store
+.vscode/
+
+# Environment files
+.env
+.env.development
+.env.production
+
+# Build artifacts
+dist/
+build/
+coverage/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Package files
+*.tgz
+
+# Ignore local changes to package.json
+# (uncomment if needed)
+# package-lock.json
+# yarn.lock
+
+# Ignore generated files
+.docusaurus/
+.cache-loader/
+.vuepress-cache/
+
+# Ignore macOS files
+._*
+.AppleDouble
+.LSOverride
+
+# Ignore Windows files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Ignore generated documentation
+docs/.vuepress/
+docs/dist/

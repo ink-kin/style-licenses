@@ -1,0 +1,37 @@
+{
+  "routes": [
+    // 404 Not Found — любая несуществующая страница
+    {
+      "src": "^/[^_].*$",
+      "dest": "/letter.html",
+      "status": 404,
+      "headers": {
+        "cache-control": "public, max-age=0, must-revalidate"
+      }
+    },
+
+    // 500 Internal Server Error
+    {
+      "src": "^/_error$",
+      "dest": "/letter.html",
+      "status": 500,
+      "headers": {
+        "cache-control": "no-cache, no-store, must-revalidate"
+      }
+    },
+
+    // 403 Forbidden (если нужно)
+    {
+      "src": "^/_forbidden$",
+      "dest": "/letter.html",
+      "status": 403
+    },
+
+    // Редирект на кастомную 404 для API-маршрутов
+    // {
+   //    "src": "/api/(.*)",
+    //   "dest": "/api/404",
+    //   "status": 404
+    // }
+  ]
+}
